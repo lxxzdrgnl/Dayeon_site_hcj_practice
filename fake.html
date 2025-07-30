@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Page</title>
+</head>
+
+<body>
+    <img src="images/hamka.webp" alt="함정카드다">
+
+    <audio id="bg-audio">
+        <source src="images/hamka_song.mp3" type="audio/mpeg">
+        브라우저가 오디오를 지원하지 않습니다.
+    </audio>
+
+    <script>
+        window.addEventListener("load", function () {
+            const audio = document.getElementById("bg-audio");
+
+            audio.play().catch(function (error) {
+                // 자동 재생이 차단된 경우 → 버튼 추가
+                const btn = document.createElement("button");
+                btn.innerText = "▶ 음악 재생";
+                btn.style.fontSize = "20px";
+                btn.style.marginTop = "20px";
+                btn.onclick = () => {
+                    audio.play();
+                    btn.remove(); // 재생 후 버튼 제거
+                };
+                document.body.appendChild(btn);
+            });
+        });
+    </script>
+</body>
+
+</html>

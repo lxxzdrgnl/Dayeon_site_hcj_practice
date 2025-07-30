@@ -201,3 +201,51 @@ nav button {
     padding: 60px 40px;
     margin-bottom: 40px;
 }
+
+#choice p {
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
+
+.choice-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(25, 68, 33) 0%, rgb(19, 34, 27) 62%);
+    padding: 20px;
+    height: 300px;
+    position: relative;
+}
+
+.hacked_img {
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.hacked_img img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1220px) {
+    .card {
+        flex-basis: calc(50% - 15px);
+    }
+}
