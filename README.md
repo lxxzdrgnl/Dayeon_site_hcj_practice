@@ -15,4 +15,4 @@ This project was built to practice **HTML**, **CSS**, and **JavaScript**.
 Open `index.html` in your browser. No installation or backend required.
 
 ### preview
-![프로젝트 예시](images/main.png)
+![프로젝트 예시](pre/main.png)
