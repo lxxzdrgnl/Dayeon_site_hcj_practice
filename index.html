@@ -31,20 +31,6 @@
                 <button>로그인</button>
             </div>
         </nav>
-
-        <script>
-            function changeLanguage(selectElement) {
-                const selectedValue = selectElement.value;
-                if (selectedValue === "english") {
-                    window.location.href = "index_eng.html";
-                } else if (selectedValue === "korean") {
-                    window.location.href = "index.html";
-                }
-            }
-
-        </script>
-
-
         <div class="header-content">
             <h2>"전문적 해킹을 배웠구나"</h2>
             <h3>고객님 취향에 맞게 맞춤형 침투</h3>
@@ -157,22 +143,6 @@
                 </div>
             </li>
         </ul>
-        <script>
-            document.querySelectorAll('.accordion input[type="radio"]').forEach((radio) => {
-                radio.previousChecked = false;
-
-                radio.addEventListener('click', function (e) {
-                    // 체크되어 있던 걸 다시 누르면 해제
-                    if (this.previousChecked) {
-                        this.checked = false;
-                    }
-
-                    // 이전 상태 기억하기
-                    document.querySelectorAll('.accordion input[type="radio"]').forEach(r => r.previousChecked = false);
-                    this.previousChecked = this.checked;
-                });
-            });
-        </script>
     </section>
     <div class="newsletter">
         <p>이메일 주소를 보내시면 구독 안내문과 새로운 소식들을 보내 드립니다.</p>
@@ -219,7 +189,7 @@
             <p>Copyright &copy; 다연일루미나티. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
