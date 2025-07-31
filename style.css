@@ -52,7 +52,7 @@ nav button {
     border-radius: 5px;
     background-color: #217e2b;
     color: #fff;
-    padding: 10px 24px;
+    padding: 7px 24px;
     margin-left: 10px;
     font-size: 16px;
     cursor: pointer;
@@ -136,14 +136,6 @@ nav button {
         font-size: 20px;
     }
 
-    nav button {
-        padding: 5px 10px;
-    }
-
-    .lang {
-        padding: 4px 8px;
-    }
-
     header {
         min-height: 37rem;
     }
@@ -174,6 +166,12 @@ nav button {
         padding: 10px 15px;
     }
 
+    .lang.styled-select {
+        width: 0px;
+        /* 너비를 최소화 */
+        text-indent: -9999px;
+        /* 텍스트 화면 밖으로 이동 */
+    }
 }
 
 /* 배너 */
