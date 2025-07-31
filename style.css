@@ -129,15 +129,16 @@ nav button {
 
 @media only screen and (max-width: 868px) {
     section {
-        padding: 40px 5%;
+        padding: 0px 5%;
     }
 
-    .logo {
-        font-size: 20px;
+    nav .logo {
+        font-size: 24px;
     }
 
     header {
         min-height: 37rem;
+        padding: 4%;
     }
 
     header .header-content {
@@ -146,19 +147,15 @@ nav button {
         padding-top: 150px;
     }
 
-    #header2 .header-content {
-        position: unset;
-        transform: none;
-        padding-top: 50px;
-    }
-
     .header-content h2 {
         font-size: 48px;
         line-height: 50px;
+        margin: auto auto
     }
 
     .header-content h3 {
         font-size: 20px;
+        padding-top: 60px;
     }
 
     .add-email button {
