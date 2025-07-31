@@ -1,6 +1,7 @@
 # DaYeon Illuminati Website
 
 This project was built to practice **HTML**, **CSS**, and **JavaScript**.
+🌐 [Visit the website](http://113.198.66.75:18140/)
 
 ### Features
 - Language selector (Korean/English)
