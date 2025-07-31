@@ -72,15 +72,22 @@ nav button {
     align-items: center;
     border: 1px solid #fff;
     background-color: transparent;
-    color: #fff
+    color: white;
+    padding: 8px 10px;
+    font-size: 14px;
 }
 
-.lang i:nth-child(1) {
-    margin-right: 8px;
+.lang option {
+    color: black;
+    /* 드롭다운 목록 내 옵션 텍스트 색 */
 }
 
-.lang i:nth-child(2) {
-    margin-left: 5px;
+.styled-select {
+    padding-left: 35px;
+    color: #ffffff;
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
 }
 
 .header-content {
@@ -281,4 +288,68 @@ nav button {
         flex-basis: calc(50% - 15px);
         height: 200px;
     }
+}
+
+/* FAQ */
+.faq .accordion {
+    width: 100%;
+    max-width: 750px;
+    margin: 60px auto;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.accordion li label::after {
+    content: '\2b';
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+}
+
+.accordion li label:hover {
+    background-color: #5b5b5b;
+    transition: 0.5s;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    /* input[type="radio"]에 체크하면 */
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    /* input[type="radio"]에 체크하면 */
+    transform: rotate(-135deg);
 }
