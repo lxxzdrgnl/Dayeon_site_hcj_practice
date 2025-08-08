@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - 다연일루미나티</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header-bg.png) center no-repeat;
+            background-size: cover;
+        }
+
+        .login-form {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 60px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background: #333;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            border: 0;
+            background-color: #217e2b;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .login-form .help-links {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .login-form .help-links a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+
+        .login-form .help-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <form>
+                <h2>로그인</h2>
+                <input type="email" placeholder="이메일 주소" required>
+                <input type="password" placeholder="비밀번호" required>
+                <button type="submit">로그인</button>
+                <div class="help-links">
+                    <a href="#">도움이 필요하신가요?</a>
+                    <a href="index.html">홈으로</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
